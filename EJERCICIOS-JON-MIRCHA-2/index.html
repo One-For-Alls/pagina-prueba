@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/No_MODULE.js" type="module"></script>
+	<title>EJERCICIOS DOM - MINI SITIO WEB</title>
+</head>
+<body data-dark>
+	
+	<header>
+		<h1>Ejercicios del Dom</h1>
+	</header>
+
+	<aside class="panel">
+		<nav class="menu">
+			<a href="#1">Reloj Digital y Alarma Sonora</a>
+			<a href="#2">Eventos del teclado</a>
+			<a href="#3">Cuentra regresiva</a>
+			<a href="#4">Responsive Design</a>
+			<a href="#5">Responsive Tester</a>
+			<a href="#6">User Agent</a>
+			<a href="#7">Deteccion de Red</a>
+			<a href="#8">Deteccion de la camara Web</a>
+			<a href="#9">Geolocalizacion</a>
+			<a href="#10">Filtro de busqueda</a>
+			<a href="#11">Sorteo digital</a>
+			<a href="#12">Slider Responsive</a>
+			<a href="#13">Filtro de busqueda</a>
+			<a href="#14">Filtro de busqueda</a>
+			<a href="#15">Filtro de busqueda</a>
+			<a href="#16">Filtro de busqueda</a>
+			<a href="#17">Filtro de busqueda</a>
+			
+		</nav>
+	</aside>
+
+	<main>
+		<section id="1">
+			<h2>Reloj Digital y Alarma Sonora</h2>
+
+			<p id="hora"></p>
+			<audio id="reproductor">
+				<source src="musica/tony.mp3" type="audio/mp3">
+			</audio>
+
+			<div>
+				<button id="iniciarReloj">Iniciar Reloj</button>
+				<button id="detenerReloj">Detener Reloj</button>
+				<button id="playMusica">Iniciar Musica</button>
+				<button id="stopMusica">Detener Musica</button>
+				<button id="playAlarma" class="alarma">Iniciar Alarma</button>
+				<input id="ctrVolumen" type="range" min="0" max="1" value="0" step="0.1"><span>VOLUMEN</span>
+				<button id="stopAlarma">Detener Alarma</button>
+
+			</div>
+
+		</section>
+
+		<section id="2">
+			<h2>EVENTOS DEL TECLADO</h2>
+			<div id="contenedor" data-dark>
+				<div id="bola"></div>
+			</div>
+		</section>
+
+		<section id="3">
+			<h1>CountDown</h1>
+			<div id="contador"></div>
+		</section>
+
+		<section id="4">
+			<h1>Responsive Design</h1>
+			
+			<div id="videoYoutube">
+				<a href="https://youtu.be/6IwUl-4pAzc" style="
+					    text-decoration: none;
+					    color: var(--main-color)!important;
+					">IR A YOUTUBE
+				</a>
+			</div>
+			<div id="mapaGoogle"></div>
+			
+		</section>
+
+		<section id="5">
+			<h3>Responsive Tester</h3> 
+
+			<div class="content-form">
+				<form id="formulario">
+					<div><input name ="input_link" type="text" placeholder="ingresa el link de la pagina" required></div>
+					<div><input name ="input_width" type="text" placeholder="ingresa el ancho" required></div>
+					<div><input name ="input_high" type="text" placeholder="ingresa el alto" required></div>
+					
+					<input name ="btnTest" type="submit" value ='Probar'>
+					<input name ="outTest" type="button" value = 'cerrar'>
+				</form>
+				
+			</div>
+
+		</section>
+
+		<section id="6">
+			<h1>Deteccion de Dispositivos</h1>
+			<h3>(User Agent)</h3>
+			<div id="user"></div>
+
+		</section>
+		<section id="7">
+			<h3>DETECCION DE RED</h3>
+			<div id="conexion"></div>
+		</section>
+		<section id="8">
+			<h3>Deteccion de la camara web</h3>
+			<div>
+				<div>
+					<label>Microfono: </label>
+					<select name="" id="dispositivo_audio"></select>					
+				</div>
+				<div>
+					<label>Camara: </label>
+					<select name="" id="dispositivo_video"></select>
+				</div>
+				<div><video id="camara" autoplay muted="muted"></video></div>
+			</div>
+		</section>
+		<section id="9">
+			
+			<h3>Geolocalización</h3>
+			<p>Tu posicion actual es: </p>
+			<div  id="geo"></div>
+
+		</section>
+		<section id="10">
+			<h3>Filtro de busqueda</h3>
+			<input type="search" class="input-filter" type="text" placeholder="Escribe el nombre del elemento">
+			<article class="cards">
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/animals" alt="animales">
+					<figcaption>Animales</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/any" alt="aleatorio">
+					<figcaption>Aleatorio</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/arch" alt="arquitectura">
+					<figcaption>Arquitectura</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/people" alt="personas">
+					<figcaption>Personas</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/any" alt="aleatorio">
+					<figcaption>Aleatorio</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/nature" alt="naturaleza">
+					<figcaption>Naturaleza</figcaption>
+				</figure>	
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/any" alt="aleatorio">
+					<figcaption>Aleatorio</figcaption>
+				</figure>	
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/tech" alt="tecnologia">
+					<figcaption>Tecnologia</figcaption>
+				</figure>	
+			</article>		
+		</section>
+
+		<section id="11">
+			<h3>SORTEO DIGITAL</h3>
+			<div class="content_sorteo">
+				<ul id="players">
+					<li class="player">Anthony</li>
+					<li class="player">Isabel</li>
+					<li class="player">Eliza</li>
+					<li class="player">Sonia</li>
+					<li class="player">Roberto</li>
+					<li class="player">Katy</li>
+					<li class="player">Ali</li>
+					<li class="player">Gabrielito</li>
+					<li class="player">Elsa</li>
+					<li class="player">Christian</li>
+				</ul>
+				<div id="ganadores">
+					<ul>
+						<li class="primero"><b>1 ST:</b> Esperando ganadores...</li>
+						<li class="segundo"><b>2 ST:</b> Esperando ganadores...</li>
+						<li class="tercero"><b>3 ST:</b> Esperando ganadores...</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div><input type="button" id="btn-sorteo" value="Sortear"></div>
+			
+		</section>
+
+		<section id="12">
+			<h3>Slider Responsive</h3>
+			<div class="slider">
+				<div class="slider-slides">
+					<div class="slider-slide active">
+						<img src="https://placeimg.com/400/400/tech" alt="tecnologia">
+					</div>
+					<div class="slider-slide">
+						<img src="https://placeimg.com/400/400/animal" alt="animal">
+					</div>
+					<div class="slider-slide">
+						<img src="https://placeimg.com/400/400/people" alt="persona">
+					</div>
+					<div class="slider-slide">
+						<img src="https://placeimg.com/400/400/arch" alt="arquitectura">
+					</div>
+				</div>	
+				<div class="btns-slider">
+					<button id="prev" class="prev">&laquo;</button>
+					<a class="next" href="#">&raquo;</a>
+				</div>		
+			</div>
+			<div class="btns-controls">
+				<button id="play" class="play" href="#">&#10148;</button>
+				<a class="stop" href="#">&#9744;</a>
+			</div>
+			
+		</section>
+		<section id="13"></section>
+		<section id="14"></section>
+		<section id="15"></section>
+		<section id="16"></section>
+		<section id="17"></section>
+	</main>
+
+	<button class="hamburger hamburger--vortex btn-menu" type="button">
+		 <span class="hamburger-box">
+		    <span class="hamburger-inner"></span>
+		 </span>
+	</button>
+
+	<button class="btn-top hidden" type="button">
+		<h1>&#11014;</h1>
+	</button>
+
+	<button id="btnDark" class="btn-dark-mode">🌙</button>
+
+	<script src="js/scripts.js" type="module"></script> <!-- type module sirve para importar -->
+</body>
+</html>

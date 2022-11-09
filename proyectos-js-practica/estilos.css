@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	text-align: center;
+	height: 3rem;
+	background: white;
+	box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, .5);
+	display: grid;
+}
+
+header .left, 
+header .right{
+	width: 50%;
+	float: left;
+}
+
+
+header .right h4{
+	display: inline-block;
+	padding: 0 8px;
+}
+
+header .left h4{
+	color: #1c7b8b;
+}
+
+header .right h4:hover{
+	color: #2cd8f5;
+	cursor: pointer;
+}
+
+main {
+	display: grid;
+	text-align: center;
+	padding: 9rem 0;
+	place-items: center;
+}
+
+main div h1{
+	background: black;
+	padding: 20px;
+	border-radius: 15px;
+	color: #fff;
+}
+
+main #btn{
+	background: transparent;
+	padding: 15px;
+	font-size: 1.5rem;
+	border-radius: 15px;
+	transition: all 0.3s linear;
+}
+
+main #btn:hover{
+	background: #000;
+	color: white;
+}

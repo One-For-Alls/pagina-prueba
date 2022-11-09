@@ -1,0 +1,11 @@
+{
+		"string": "Anthony",
+		"arreglo": ["comer","dormir","leer"],
+		"number": 24,
+		"boolean": true,
+		"object":{
+			"correo": "@anthony",
+			"fb": "@anthony.zavaleta"
+		},
+		"null": null
+	}
