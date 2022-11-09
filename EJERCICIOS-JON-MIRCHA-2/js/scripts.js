@@ -61,7 +61,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
 	geolocation('geo');
 	filtro_busqueda('.input-filter','.card');
 	sorteo('.player','#players','btn-sorteo');
-	carrusel('#play');
+	carrusel();
 	scroll_spy('(max-width:1024px)');
 	
 });
