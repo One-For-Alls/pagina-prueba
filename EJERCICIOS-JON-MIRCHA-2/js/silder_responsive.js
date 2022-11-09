@@ -1,6 +1,6 @@
 const d = document;
 
-export default function carrusel(play){
+export default function carrusel(){
     const $prev = d.querySelector('.btns-slider .prev'),
           $next = d.querySelector('.btns-slider .next'),
           $slide = d.querySelectorAll('.slider-slide'),
@@ -49,18 +49,17 @@ const stop = () =>{
 
     d.addEventListener('click', (e)=>{
         console.log(e.target.matches('#prev'));
-        if(e.target.matches('#prev')){
-            // e.preventDefault();
+        if(e.target ==== $prev){
+            e.preventDefault();
             previous();
         }
 
         if(e.target === $next){
             e.preventDefault();
-            e.stopPropagation();
            next();
         }
 
-        if(e.target.matches(play)){
+        if(e.target === $play){
             e.preventDefault();
             autoplay();
             $prev.style.setProperty('pointer-events','none');
